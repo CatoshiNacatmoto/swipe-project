@@ -28,6 +28,8 @@
   --secondary-text-size: 1.4rem;
   --secondary-text-height: 1.8rem;
 
+  --btn-size: 1.6rem;
+
   /*spacing */
   --spacing-sm: 0.8rem;
   --spacing-md: 1.6rem;
@@ -38,6 +40,7 @@
   --purple-2-dark: #7000ff;
   --blue-1: #00d4ff;
   --primary-accent: #0a2540;
+  --btn-hover-color: #6d7a88;
   --bg-white: #ffff;
   --bg-light: #f7f9fc;
 }
@@ -132,4 +135,51 @@ p {
   line-height: var(--secondary-text-height);
   color: var(--text-grey);
   letter-spacing: 0.25px;
+}
+
+.primary-button {
+  font-family: var(--body-font);
+  font-size: var(--btn-size);
+  letter-spacing: 1.25px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  color: var(--text-light);
+  background-color: var(--primary-accent);
+  transition: all 0.25s ease;
+  padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.primary-button:hover {
+  background-color: var(--btn-hover-color);
+  cursor: pointer;
+}
+
+.secondary-button {
+  font-family: var(--body-font);
+  font-size: var(--btn-size);
+  letter-spacing: 1.25px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  color: var(--primary-accent);
+  background-color: transparent;
+}
+.secondary-button:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.with-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.with-icon > img {
+  transition: transform 0.25s ease;
+}
+
+.with-icon:hover > img {
+  transform: translateX(4px);
 }
