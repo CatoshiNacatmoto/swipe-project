@@ -56,7 +56,7 @@ body {
   color: var(--text-dark);
   width: 100%;
   padding: var(--spacing-sm) 0 0 0;
-  background-color: var(--blue-1);
+  background-color: var(--bg-white);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -288,4 +288,20 @@ main {
 .hero-phone {
   height: 62.8rem;
   transform: translate(3.2rem, -3.2rem);
+}
+
+/* Partners section*/
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: var(--spacing-xl) 0;
+  column-gap: var(--spacing-md);
+  row-gap: var(--spacing-lg);
+}
+
+.partners-grid img {
+  height: 6rem;
+  place-self: center;
 }
