@@ -56,7 +56,7 @@ body {
   color: var(--text-dark);
   width: 100%;
   padding: var(--spacing-sm) 0 0 0;
-  background-color: var(--purple-1);
+  background-color: var(--blue-1);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,6 +122,39 @@ p {
   line-height: var(--p-height);
   font-weight: 400;
   margin: var(--spacing-md) 0;
+}
+
+/* LAYOUT STYLES */
+
+.section-container {
+  width: 100%;
+  max-width: var(--standar-width);
+}
+
+.two-column {
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.two-column > .col-left {
+  width: 50%;
+  padding: 0 var(--spacing-md) 0 0;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.two-column > .col-right {
+  width: 50%;
+  padding: 0 0 0 var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .subtitle,
@@ -225,4 +258,34 @@ p {
 
 .navbar-button:hover {
   background: rgba(250, 250, 250, 0.5);
+}
+
+/* HERO STYLES */
+
+main {
+  margin: var(--spacing-xl) 0;
+}
+
+.button-container {
+  display: flex;
+  margin: var(--spacing-md) 0;
+}
+
+.button-container button:nth-of-type(2) {
+  margin: 0 0 0 var(--spacing-md);
+  color: var(--purple-2-dark);
+}
+
+.hero p {
+  max-width: 48rem;
+}
+
+.hero .hero-phone-container {
+  height: 58.4rem;
+  align-items: flex-end;
+}
+
+.hero-phone {
+  height: 62.8rem;
+  transform: translate(3.2rem, -3.2rem);
 }
