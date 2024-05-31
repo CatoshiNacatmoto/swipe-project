@@ -73,8 +73,8 @@ h1 {
 
 h2 {
   font-family: var(--heading-font);
-  font-size: var(--h2-size);
-  font-weight: 500;
+  font-size: var(--h3-size);
+  font-weight: 600;
   letter-spacing: -0.25px;
   line-height: var(--h2-height);
 }
@@ -304,4 +304,23 @@ main {
 .partners-grid img {
   height: 6rem;
   place-self: center;
+}
+
+/* Unified platoform */
+.unified-platform {
+  padding: var(--spacing-xl) 0;
+}
+
+.unified-platform h2 {
+  width: 50%;
+  margin-bottom: var(--spacing-md);
+}
+
+.unified-platform .primary-button {
+  background-color: var(--purple-1);
+  margin: var(--spacing-md) 0s;
+}
+.unified-platform .primary-button:hover {
+  background-color: var(--primary-accent);
+  margin: var(--spacing-md) 0s;
 }
