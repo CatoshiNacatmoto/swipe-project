@@ -89,7 +89,7 @@ h2 {
   font-size: var(--h3-size);
   font-weight: 600;
   letter-spacing: -0.25px;
-  line-height: var(--h2-height);
+  line-height: 1.6;
 }
 
 h3 {
@@ -294,6 +294,9 @@ p {
   background: rgba(250, 250, 250, 0.5);
 }
 
+.hamburger {
+  display: none;
+}
 /* Animated gradients*/
 #gradient-canvas {
   width: 200%;
@@ -770,4 +773,243 @@ main {
 .footer h3 {
   font-size: var(--h6-size);
   font-weight: 700;
+}
+@media only screen and (max-width: 114.4rem) {
+  .section-container {
+    padding: 0 var(--spacing-md);
+  }
+
+  .hero h1 {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 85rem) {
+  .virtual-events-section .swipe-sessions-card {
+    width: 90%;
+  }
+}
+
+/* Tablet size */
+
+@media only screen and (max-width: 77rem) {
+  :root {
+    --h1-size: 6.4rem;
+    --h1-height: 7.2rem;
+    --h3-size: 3.4rem;
+  }
+
+  main {
+    margin: 0;
+  }
+
+  .hero .two-column {
+    align-items: center;
+  }
+
+  .hero .col-left {
+    width: 60%;
+  }
+
+  .hero .col-right {
+    width: 40%;
+  }
+
+  .hero-phone {
+    height: 55rem;
+    transform: translateX(3rem);
+  }
+
+  .integration-section .card-container {
+    flex-direction: column;
+  }
+
+  .integration-section .card-container .card {
+    width: 100%;
+  }
+
+  /* Why swipe */
+  .why-swipe-section .card-container {
+    flex-wrap: wrap;
+  }
+
+  .why-swipe-section .card-container .card {
+    width: 50%;
+    margin: 0;
+  }
+
+  /* GLOBAL SCALE SECTION */
+  .global-section .card-container {
+    flex-wrap: wrap;
+    margin: var(--spacing-xl) 0;
+  }
+  .global-section .card-container .card {
+    width: 50%;
+    margin: var(--spacing-md) 0;
+  }
+}
+
+@media only screen and (max-width: 55rem) {
+  :root {
+    --h1-size: 5rem;
+    --h1-height: 6.4rem;
+    --h3-size: 3.4rem;
+  }
+
+  /* NAVBARS */
+
+  .navbar {
+    margin: var(--spacing-md) 0;
+  }
+
+  .navbar .menu {
+    display: none;
+  }
+
+  .navbar .navbar-button {
+    display: none;
+  }
+
+  .hamburger {
+    width: 5rem;
+    height: 3rem;
+    background-color: rgba(250, 250, 250, 0.25);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hamburger .bar {
+    width: 1.8rem;
+    height: 0.3rem;
+    background-color: var(--bg-white);
+    margin: 2px;
+  }
+
+  .navbar {
+    margin: var(--spacing-lg) 0;
+  }
+
+  #gradient-canvas {
+    height: 82rem;
+  }
+
+  /* HERO */
+
+  main {
+    margin: var(--spacing-lg) 0 0 0;
+  }
+
+  .two-column {
+    flex-direction: column;
+  }
+
+  .two-column .col-right {
+    width: 100%;
+    padding: 0;
+  }
+
+  .two-column .col-left {
+    width: 100%;
+  }
+  .partners-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-container .partners-grid img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero .two-column .hero-phone-container {
+    display: none;
+  }
+
+  /* Unified platform */
+
+  .unified-platform h2 {
+    width: 100%;
+  }
+
+  /* Integrations */
+  .integration-section .col-right {
+    display: none;
+  }
+
+  .why-swipe-section .card-container .card {
+    width: 100%;
+    margin: var(--spacing-md);
+  }
+
+  .why-swipe-section .card-container .card .icon {
+    height: 4rem;
+  }
+
+  /* Global section */
+  .global-section .card-container .card {
+    width: 100%;
+    margin: var(--spacing-sm) 0;
+  }
+
+  #globe {
+    opacity: 10%;
+  }
+
+  /* Virtual events */
+  .virtual-events-section .swipe-sessions-card {
+    width: 100%;
+    margin: var(--spacing-lg) 0;
+  }
+
+  .virtual-events-section .swipe-sessions-card .secondary-text {
+    width: 100%;
+  }
+
+  .virtual-events-section .swipe-sessions-card .card-top {
+    height: 40%;
+  }
+
+  #sessions-logo {
+    width: 30rem;
+  }
+
+  /* Getting started section */
+  .getting-started-section .col-right {
+    flex-wrap: wrap;
+  }
+
+  .getting-started-section .col-right .card {
+    width: 100%;
+    margin: var(--spacing-md);
+  }
+
+  .footer .section-container {
+    flex-wrap: wrap;
+  }
+
+  .footer .col {
+    width: 50%;
+    margin: var(--spacing-md) 0;
+  }
+
+  .footer .col .a {
+    font-size: 1.6rem;
+  }
+
+  #footer-logo {
+    width: 50%;
+  }
+
+  .footer .icon-link .img {
+    width: 1.8rem;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
 }
